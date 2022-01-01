@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import { Navbar, Menu } from "./components/index";
+import FirstSection from "./components/FirstSection";
+import SecondSection from "./components/SecondSection";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import SectionNumberThree from "./components/SectionNum3";
 
-function App() {
+const App = (props) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Menu />
+      <Navbar />
+      <FirstSection />
+      <SecondSection />
+      <SectionNumberThree />
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
