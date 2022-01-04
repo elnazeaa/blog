@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import SectionNumberThree from "./components/SectionNum3";
 import SectionNumFour from "./components/SectionNum4";
 import SectionNumFive from "./components/SectionNum5";
+import SectionNumSix from "./components/SectionNum6";
 
 const App = (props) => {
   useEffect(() => {
@@ -25,6 +26,7 @@ const App = (props) => {
       <SectionNumberThree />
       <SectionNumFive />
       <SectionNumFour />
+      <SectionNumSix />
     </BrowserRouter>
   );
 };

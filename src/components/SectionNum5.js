@@ -4,7 +4,7 @@ import { datas } from "../utils/info";
 
 const SectionNumFive = (props) => {
   return (
-    <Wrapper>
+    <Wrapper id="profile">
       {datas.map((item, index) => {
         let num = 0;
         for (let i = 0; i < index; i++) {

@@ -25,8 +25,6 @@ export const navs = [
   { id: 4, name: "profile", url: "#profile" },
   { id: 5, name: "price", url: "#price" },
   { id: 6, name: "contact-us", url: "#contact" },
-  { id: 7, name: "something", url: "#something" },
-  { id: 8, name: "otherthing", url: "#otherthing" },
 ];
 
 export const social = [
