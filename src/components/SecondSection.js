@@ -10,7 +10,6 @@ const SecondSection = (props) => {
         for (let i = 0; i < index; i++) {
           num = num + 50;
         }
-        console.log(num);
 
         return (
           <div

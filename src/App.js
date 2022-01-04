@@ -7,6 +7,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import SectionNumberThree from "./components/SectionNum3";
+import SectionNumFour from "./components/SectionNum4";
+import SectionNumFive from "./components/SectionNum5";
 
 const App = (props) => {
   useEffect(() => {
@@ -21,6 +23,8 @@ const App = (props) => {
       <FirstSection />
       <SecondSection />
       <SectionNumberThree />
+      <SectionNumFive />
+      <SectionNumFour />
     </BrowserRouter>
   );
 };

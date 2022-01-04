@@ -61,11 +61,16 @@ const Wrapper = styled.section`
   .img {
     flex: 1 1 24rem;
   }
+  .content {
+    flex: 1 1 20rem;
+  }
   .img img {
     width: 100%;
   }
-  .txt {
+  ${
+    "" /* .txt {
     width: 40rem;
+  } */
   }
   .txt h2 {
     font-size: 2.3rem;
@@ -91,7 +96,7 @@ const Wrapper = styled.section`
     gap: 2rem;
   }
   .box {
-    padding: 1rem;
+    padding: 0 2rem;
     border: 1px solid #ddd;
     margin: 1rem 0;
     display: flex;
